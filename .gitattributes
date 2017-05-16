@@ -1,2 +1,5 @@
 *.cr linguist-language=crystal
+*.js linguist-language=crystal
+*.css linguist-language=crystal
+*.html linguist-language=crystal
 *.ecr linguist-language=crystal
