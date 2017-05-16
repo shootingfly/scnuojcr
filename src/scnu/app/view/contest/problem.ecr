@@ -1,0 +1,15 @@
+<h3 class="text-center text-primary"><%= contest.title %></h3>
+<span class="col-sm-6 text-right">开始时间：<%= contest.start_time %></span>
+<span class="col-sm-6 text-left">结束时间：<%= contest.end_time %></span>
+<table class="table table-hover table-responsive datatable" data-source="/contest/<%= contest.id %>/problem">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th><%= t(ProblemID) %></th>
+      <th><%= t(Title) %></th>
+      <th>AC</th>
+      <th>Submit</th>
+    </tr>
+  </thead>
+</table>
+<div class="searchable" value="<%= t(ProblemID) %> / <%= t(Title) %>"></div>

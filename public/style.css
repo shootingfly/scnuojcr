@@ -1,0 +1,23 @@
+th, td{
+    text-align: center;
+}
+.navbar{
+	border-radius: 0;
+}
+
+#container{
+	min-height: 400px;
+}
+.highlight{
+    margin-top: 15px;
+    background: #FFF;
+    pre {
+      margin-top: 9px;
+    }
+}
+.cards {
+    position: fixed;
+    right: 0px;
+    bottom: 200px;
+    overflow: visible;
+}

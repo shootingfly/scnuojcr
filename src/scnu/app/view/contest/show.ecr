@@ -1,0 +1,27 @@
+<div class="col-sm-6 col-sm-offset-3">
+  <div class="panel panel-default">
+    <div class="panel-heading text-center">
+      <span><%= contest.title %></span>
+    </div>
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <th><%= t(StartTime) %></th>
+          <th><%= contest.start_time %></th>
+        </tr>
+        <tr>
+          <th><%= t(EndTime) %></th>
+          <th><%= contest.end_time %></th>
+        </tr>
+        <tr>
+          <th><%= t(Address) %></th>
+          <th><%= contest.address %></th>
+        </tr>
+        <tr>
+          <th><%= t(Remark) %></th>
+          <th><%= contest.remark %></th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

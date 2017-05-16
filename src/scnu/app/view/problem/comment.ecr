@@ -1,0 +1,25 @@
+<ul class="media-list">
+  <% comments.each do |comment| %>
+  <li class="media">
+    <div class="media-left">
+      <img class="img-circle" src="/image/star.png" alt="" width="60" height="60">
+    </div>
+    <div class="media-body">
+      <a href="/user/<%= comment.student_id %>">#<%= comment.student_id %><%= comment.student_id %></a>
+      <time class="timeago" datetime="<%= comment.created_at %>"></time>
+      <%= Markdown.to_html(comment.content) %>
+    </div>
+  </li>
+  <hr>
+  <% end %>
+</ul>
+<form class="form-horizontal" action="/problem/<%= env.params.url["problem_id"] %>/comment" method="post">
+  <input type="hidden" name="problem_id" value="<%= env.params.url["problem_id"] %>">
+  <input type="hidden" name="student_id" value="1">
+  <div class="form-group">
+    <textarea class="form-control" name="content" rows="10" cols="80"></textarea>
+  </div>
+  <div class="form-group">
+    <input class="btn btn-primary btn-block" type="submit" value="Go">
+  </div>
+</form>

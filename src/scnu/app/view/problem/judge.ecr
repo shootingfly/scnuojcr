@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="/codemirror/css/codemirror.css">
+<link rel="stylesheet" href="/codemirror/css/fullscreen.css">
+<link rel="stylesheet" href="/codemirror/css/monokai.css">
+<script type="text/javascript" src="/codemirror/js/codemirror.js"></script>
+<script type="text/javascript" src="/codemirror/js/fullscreen.js"></script>
+<script type="text/javascript" src="/codemirror/js/matchbrackets.js"></script>
+<script type="text/javascript" src="/codemirror/js/c.js"></script>
+<script type="text/javascript" src="/codemirror/js/sublime.js"></script>
+<div class="col-md-9">
+  <form class="form-horizontal" action="/probelms/<%= problem.problem_id %>/judge" target="_blank" method="post">
+    <div class="form-group">
+      <textarea name="code" id="code" class="form-control" rows="8" cols="80"></textarea>
+    </div>
+    <div class="form-group">
+      <input type="submit" class="btn btn-block btn-primary" value="提交">
+    </div>
+  </form>
+  <p class="text-center text-muted">
+    F8 : Scroll &nbsp;&nbsp; F9: Save &nbsp;&nbsp; F10: Recover &nbsp;&nbsp; F11: FullScreen
+  </p>
+</div>
+<div class="col-md-3">
+  <%= render "src/scnu/app/view/problem/_nav.ecr" %>
+</div>
+<script type="text/javascript">
+var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+lineNumbers: true,
+styleActiveLine: true,
+matchBrackets: true,
+mode: "text/x-c",
+theme: "monokai",
+keyMap: "sublime",
+lineWrapping: true,
+extraKeys:  {
+  "F8": function(cm) {
+    if(cm.getOption('size')) {
+      editor.setSize('auto', 'auto');
+      cm.setOption("size", false);
+    } else {
+      editor.setSize('auto', 350);
+      cm.setOption("size", true);
+    }
+  },
+  "F9": function(cm) {
+    var code = cm.getValue();
+    window.localStorage.setItem("code",code);
+  },
+  "F10": function(cm) {
+    var code = window.localStorage.getItem("code");
+    cm.setValue(code);
+  },
+  "F11": function(cm) {
+    cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+  }
+},
+});
+editor.setSize('auto', 'auto');
+</script>

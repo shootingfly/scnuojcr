@@ -1,0 +1,46 @@
+version: 1.0
+shards:
+  baked_file_system:
+    github: schovi/baked_file_system
+    version: 0.9.4
+
+  db:
+    github: crystal-lang/crystal-db
+    version: 0.4.2
+
+  kemal:
+    github: kemalcr/kemal
+    version: 0.18.3
+
+  kemal-csrf:
+    github: kemalcr/kemal-csrf
+    version: 0.2.0
+
+  kemal-session:
+    github: kemalcr/kemal-session
+    commit: bbef25f36fe6505d3221de9952f94a1023225b85
+
+  kilt:
+    github: jeromegn/kilt
+    version: 0.3.3
+
+  mysql:
+    github: crystal-lang/crystal-mysql
+    commit: 379fd5353fdac4e20530187cb2efac48ed3b267e
+
+  pool:
+    github: ysbaddaden/pool
+    version: 0.2.3
+
+  radix:
+    github: luislavena/radix
+    version: 0.3.8
+
+  redis:
+    github: stefanwille/crystal-redis
+    version: 1.8.0
+
+  sidekiq:
+    github: mperham/sidekiq.cr
+    version: 0.6.1
+

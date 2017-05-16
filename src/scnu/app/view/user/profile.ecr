@@ -1,0 +1,76 @@
+<form class="form-horizontal" action="/user/profile" method="post">
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="theme"><%= t(Theme) %></label>
+    <div class="col-sm-4">
+      <select class="form-control" name="theme">
+        <option value="cerulean">cerulean</option>
+        <option value="cosmo">cosmo</option>
+        <option value="cyborg">cyborg</option>
+        <option value="darkly">darkly</option>
+        <option value="flatly">flatly</option>
+        <option value="journal">journal</option>
+        <option value="lumen">lumen</option>
+        <option value="paper">paper</option>
+        <option value="readable">readable</option>
+        <option value="sandstone">sandstone</option>
+        <option value="simplex">simplex</option>
+        <option value="slate">slate</option>
+        <option value="spacelab">spacelab</option>
+        <option value="superhero">superhero</option>
+        <option value="united">united</option>
+        <option value="yeti">yeti</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="locale"><%= t(Locale) %></label>
+    <div class="col-sm-4">
+      <select class="form-control" name="locale">
+        <option value="en">en</option>
+        <option value="zh-cn">zh-cn</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="mode"><%= t(Mode) %></label>
+    <div class="col-sm-4">
+      <select class="form-control" name="mode">
+        <option value="c">c</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="keymap"><%= t(Keymap) %></label>
+    <div class="col-sm-4">
+      <select class="form-control" name="keymap">
+        <option value="sublime">sublime</option>
+        <option value="vim">vim</option>
+        <option value="emac">emac</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="code_theme"><%= t(CodeTheme) %></label>
+    <div class="col-sm-4">
+      <select class="form-control" name="code_theme">
+        <option value="monokai">monokai</option>
+        <option value="3024-day">3024-day</option>
+        <option value="3024-night">3024-night</option>
+        <option value="base16-dark">base16-dark</option>
+        <option value="base16-light">base16-light</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-4 col-sm-offset-4">
+      <input class="form-control btn btn-primary" type="submit" value="<%= t(Submit) %>">
+    </div>
+  </div>
+</form>
+<script type="text/javascript">
+  $("[value='<%= current_theme %>']").attr("selected",true);
+  $("[value='<%= current_locale %>']").attr("selected", true);
+  $("[value='<%= current_mode %>']").attr("selected", true);
+  $("[value='<%= current_keymap %>']").attr("selected", true);
+  $("[value='<%= current_code_theme %>']").attr("selected", true);
+</script>

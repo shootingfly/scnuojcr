@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= page_title %> | SCNUOJ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://cdn.bootcss.com/datatables/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/datatables/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.bootcss.com/datatables/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap-filestyle/1.2.1/bootstrap-filestyle.min.js"></script>
+    <script type="text/javascript" src="/datatable.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <a href="/admin" class="navbar-link">SCNUOJ</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Username <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <a href="/admin/logout">注销</a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="col-sm-2 list-group">
+      <a href="/dashboard" class="list-group-item">系统详情</a>
+      <a href="/admin/manager" class="list-group-item">管理员管理</a>
+      <a href="/admin/problem" class="list-group-item">题目管理</a>
+      <a href="/admin/user" class="list-group-item">用户管理</a>
+      <a href="/admin/contest" class="list-group-item">比赛管理</a>
+      <a href="/rank" target="/_blank" class="list-group-item">排名查看</a>
+      <a href="/status" target="/_blank" class="list-group-item">状态监测</a>
+      <a href="/" target="/_blank" class="list-group-item">网站首页</a>
+    </div>
+    <div class="col-sm-10 container" id="max">
+      <%= content %>
+    </div>
+    <footer class="text-center text-muted">
+      <p>SCNUOJ 后台管理系统</p>
+      <p>Copyright © 2017 South China Normal University. All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

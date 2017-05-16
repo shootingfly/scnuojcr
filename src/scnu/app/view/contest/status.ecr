@@ -1,0 +1,15 @@
+<table class="table table-hover table-responsive datatable" data-source="/contest/<%= contest.id %>/status">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th><%= t(Username) %></th>
+      <th><%= t(Problem) %></th>
+      <th><%= t(Result) %></th>
+      <th><%= t(TimeCost) %></th>
+      <th><%= t(SpaceCost) %></th>
+      <th><%= t(Language) %></th>
+      <th><%= t(SubmitTime) %></th>
+    </tr>
+  </thead>
+</table>
+<div class="searchable" value="<%= t(Username) %> / <%= t(Problem) %> / <%= t(Result) %>"></div>

@@ -1,0 +1,61 @@
+<div class="panel panel-default">
+  <div class="panel-heading text-center">
+    <span>problem.title</span>
+  </div>
+  <table class="table table-stripped">
+    <tbody>
+      <tr>
+        <th><%= t(TimeLimit) %></th>
+        <td><%= problem.time %></td>
+      </tr>
+      <tr>
+        <th><%= t(SpaceLimit) %></th>
+        <td><%= problem.space %></td>
+      </tr>
+      <tr>
+        <th><%= t(AC) %></th>
+        <td><%= problem.ac %></td>
+      </tr>
+      <tr>
+        <th><%= t(Submit) %></th>
+        <td><%= problem.submit %></td>
+      </tr>
+      <tr>
+        <th><%= t(Ratio) %></th>
+        <td><%= problem.ratio %>%</td>
+      </tr>
+      <tr>
+        <th><%= t(Difficulty) %></th>
+        <td><%= problem.difficulty %></td>
+      </tr>
+      <tr>
+        <th><%= t(LastPerson) %></th>
+        <td><%= problem.submit%></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="cards">
+  <div class="btn-toolbar">
+    <div class="btn-group-vertical">
+      <a href="/problem/<%= problem.problem_id %>" class="btn btn-primary">
+        <span class="card-content"><%= t(Show) %></span>
+      </a>
+      <a href="/problem/<%= problem.problem_id %>/rand" class="btn btn-primary">
+        <span class="card-content"><%= t(Rand) %></span>
+      </a>
+      <a href="/problem/<%= problem.problem_id %>/judge" class="btn btn-info">
+        <span class="card-content"><%= t(Judge) %></span>
+      </a>
+      <a href="/problem/<%= problem.problem_id %>/comment" class="btn btn-info">
+        <span class="card-content"><%= t(Comment) %></span>
+      </a>
+      <a href="/problem/<%= problem.problem_id %>/prev" class="btn btn-primary">
+        <span class="card-content"><%= t(Next) %></span>
+      </a>
+      <a href="/problem/<%= problem.problem_id %>/next" class="btn btn-primary">
+        <span class="card-content"><%= t(Prev) %></span>
+      </a>
+    </div>
+  </div>
+</div>

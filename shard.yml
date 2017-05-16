@@ -1,0 +1,26 @@
+name: scnu
+version: 0.1.0
+
+authors:
+  - shootingfly <790174750@qq.com>
+
+targets:
+  scnu:
+    main: src/scnu.cr
+
+crystal: 0.22.0
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+    version: ~> 0.18.3
+  mysql:
+    github: crystal-lang/crystal-mysql
+    branch: master
+  kemal-session:
+    github: kemalcr/kemal-session
+    branch: master
+  sidekiq:
+    github: mperham/sidekiq.cr

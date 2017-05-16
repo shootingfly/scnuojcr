@@ -1,0 +1,56 @@
+<h4 class="text-center"><%= t(Register) %></h4>
+<form class="form-horizontal" action="/register" method="post">
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="student_id"><%= t(StudentID) %></label>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" name="student_id" required autofocus>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="password"><%= t(Password) %></label>
+    <div class="col-sm-4">
+      <input class="form-control" type="password" name="password" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="username"><%= t(Username) %></label>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" name="username" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="classgrade"><%= t(ClassGrade) %></label>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" name="classgrade" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="dormitory"><%= t(Dormitory) %></label>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" name="dormitory" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="phone"><%= t(Phone) %></label>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" name="phone" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="signature"><%= t(Sinature) %></label>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" name="signature" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="qq">QQ</label>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" name="qq" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-4 col-sm-offset-4">
+      <input class="form-control btn btn-primary" type="submit" value="<%= t(Register) %>">
+    </div>
+  </div>
+</form>

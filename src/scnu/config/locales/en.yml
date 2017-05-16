@@ -1,0 +1,98 @@
+# elements like %{queue} are variables and should not be translated
+en: # <---- change this to your locale code
+  SCNUOJ: SCNUOJ
+  Home: Home
+  Problem: Problem
+  Status: Status
+  Rank: Rank
+  WeekRank: Week Rank
+  Contest: Contest
+  FAQ: FAQ
+  Login: Login
+  Register: Register
+  Profile: Profile
+  UserEdit: User Update
+  UserInfo: User Info
+  User: User
+  ProblemID: Problem ID
+  Title: Title
+  # Login
+  Login: Login
+  RememberMe: Remember me
+  ForgetPassword: Forget Password
+  # Register
+  Register: Register
+  Username: Username
+  StudentID: Student ID
+  Password: Password
+  ClassGrade: ClassGrade
+  Dormitory: Dormitory
+  Phone: Phone
+  Signature: Signature
+  # Status
+  Result: Result
+  TimeCost: Time Cost
+  SpaceCost: Space Cost
+  Language: Language
+  SubmitTime: Submit Time
+  # Problem
+  Title: Title
+  Difficulty: Difficulty
+  TimeLimit: Time Limit
+  SpaceLimit: Space Limit
+  Ratio: Ratio
+  Source: Source
+  # Rank
+  Rank: Rank
+  ClassGrade: ClassGrade
+  Dormitory: Dormitory
+  Score: Score
+  # Week Rank
+  WeekRank: Week Rank
+  WeekScore: Week Score
+  # Contest
+  Contest: Contest
+  ContestID: Contest ID
+  StartTime: Start Time
+  EndTime: End Time
+  Address: Address
+  ContestStatus: Contest Status
+  Remark: Remark
+  # Footer
+  Home: Home
+  About: About
+  Joinus: Join Us
+  # User
+  Profile: Profile
+  ChangePassword: Change Password
+  Show: Show
+  Edit: Edit
+  Logout: Logout
+  # Profile
+  Theme: Theme
+  Locale: Locale
+  Keymap: Keymap
+  Mode: Mode
+  CodeTheme: Code Theme
+  Submit: Submit
+  # Passowrd
+  OldPassword: Old Password
+  NewPassword: New Password
+  PasswordConfirmation: Password Confirmation
+  # Problem Nav
+  Show: Show
+  Rand: Rand
+  Judge: Judge
+  Comment: Comment
+  Prev: Prev
+  Next: Next
+  LastPerson: Last Person
+  Ratio: Ratio
+  SubmitNum: Submit
+  ACNum: AC
+  SpaceLimit: Space Limit
+  TimeLimit: Time Limit
+  UserInfo: User Info
+  ErrorRecords: Error Records
+  ACRecords: AC Records
+  ContestRecords: Contest Records

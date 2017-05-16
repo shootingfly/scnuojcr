@@ -1,0 +1,42 @@
+<a href="/admin/manager" class="btn btn-primary pull-right">管理员列表</a>
+<h4 class="text-center">编辑管理员</h4>
+<form class="form-horizontal" action="/admin/manager/<%= manager.id %>/edit" method="post">
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="username">用户名</label>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" name="username" value="<%= manager.username %>" required autofocus>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="password">密码</label>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" name="password" value="<%= manager.password %>" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="role">角色</label>
+    <div class="col-sm-4">
+      <select class="form-control" name="role" required>
+        <option value="超级管理员">超级管理员</option>
+        <option value="老师">老师</option>
+        <option value="学委">学委</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 control-label" for="remark">备注</label>
+    <div class="col-sm-4">
+      <input class="form-control" type="text" name="remark" value="<%= manager.remark %>" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-4 col-sm-offset-4">
+      <input class="form-control btn btn-primary" type="submit" value="提交">
+    </div>
+  </div>
+</form>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("[value='<%=manager.role %>']").attr("selected", true);
+  });
+</script>

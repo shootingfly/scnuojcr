@@ -1,0 +1,64 @@
+SITE_NAME          = "SCNUOJ"
+DEFAULT_THEME      = "readable"
+DEFAULT_MODE       = "C"
+DEFAULT_KEYMAP     = "sublime"
+DEFAULT_LOCALE     = "en"
+DEFAULT_CODE_THEME = "3024-day"
+AC                 = "Accepted"
+CE                 = "Compile Error"
+RE                 = "Runtime Error"
+TE                 = "Time Limit Exceeded"
+ME                 = "Memory Limit Exceeded"
+PE                 = "Presentation Error"
+OE                 = "Output Limit Exceeded"
+WA                 = "Wrong Answer"
+ALLOW_LANGUAGES    = %w(C C++ Java Crystal Ruby Python2 Python3 Go Lua)
+SLOWS              = %w(Ruby Python2 Python3 Lua)
+CODE_FILE          = {
+  "C"       => "main.c",
+  "C++"     => "main.cpp",
+  "Java"    => "Main.java",
+  "Crystal" => "main.cr",
+  "Ruby"    => "main.rb",
+  "Python2" => "main.py",
+  "Python3" => "main.py",
+  "Go"      => "main.go",
+  "Lua"     => "main.lua",
+}
+BUILD_CMD = {
+  "C"       => "gcc main.c -o main",
+  "C++"     => "g++ main.cpp -O2 -Wall -lm --static -DONLINE_JUDGE -o main",
+  "Java"    => "javac Main.java",
+  "Crystal" => "crystal build main.cr",
+  "Ruby"    => "ruby -c main.rb",
+  "Python2" => "python2 -m py_compile main.py",
+  "Python3" => "python3 -m py_compile main.py",
+  "Go"      => "go build -ldflags '-s -w' main.go",
+  "Lua"     => "",
+}
+EXE_CMD = {
+  "C"       => "./main",
+  "C++"     => "./main",
+  "Java"    => "java Main",
+  "Crystal" => "./main",
+  "Ruby"    => "ruby main.rb",
+  "Python2" => "python2 main.py",
+  "Python3" => "python3 main.py",
+  "Go"      => "./main",
+  "Lua"     => "lua main.lua",
+}
+# Result
+HASH = {
+  AC => 1,
+  CE => 2,
+  RE => 4,
+  TE => 8,
+  ME => 16,
+  PE => 32,
+  OE => 64,
+  WA => 128,
+}
+TESTDATA_PATH = "/home/rocky/Crystals/scnu/public/upload/problem/testdata"
+JUDGE_PATH    = "/home/rocky/Crystals/scnu/public/judge/workspace"
+SOLUTION_PATH = "/home/rocky/Crystals/scnu/public/judge/solution"
+ERROR_PATH    = "/home/rocky/Crystals/scnu/public/judge/error"
