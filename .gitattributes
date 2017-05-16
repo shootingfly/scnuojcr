@@ -1,0 +1,2 @@
+*.cr linguist-language=crystal
+*.ecr linguist-language=crystal

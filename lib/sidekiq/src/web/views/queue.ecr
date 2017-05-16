@@ -1,0 +1,37 @@
+<% url = "#{x.root_path}queues/#{name}" %>
+<header class="row">
+  <div class="col-sm-5">
+    <h3>
+      <%= x.t("CurrentMessagesInQueue", {"queue" => x.h(name)}) %>
+      <% if queue.paused? %>
+        <span class="label label-danger"><%= x.t("Paused") %></span>
+      <% end %>
+    </h3>
+  </div>
+  <div class="col-sm-4 pull-right">
+    <%= ecr "_paging" %>
+  </div>
+</header>
+<div class="table_container">
+  <table class="queue table table-hover table-bordered table-striped">
+    <thead>
+      <th><%= x.t("Job") %></th>
+      <th><%= x.t("Arguments") %></th>
+      <th></th>
+    </thead>
+    <% jobs.each_with_index do |msg, index| %>
+      <tr>
+        <td><%= x.h(msg.display_class) %></td>
+        <td><%= x.display_args(msg.display_args) %></td>
+        <td>
+          <form action="<%= x.root_path %>queues/<%= name %>/delete" method="post">
+            <%= x.csrf_tag %>
+            <input name="key_val" value="<%= x.h msg.item.to_json %>" type="hidden" />
+            <input class="btn btn-danger btn-xs" type="submit" name="delete" value="<%= x.t("Delete") %>" data-confirm="<%= x.t("AreYouSure") %>" />
+          </form>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+<%= ecr "_paging" %>

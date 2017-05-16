@@ -1,0 +1,13 @@
+name: mysql
+version: 0.3.2
+
+dependencies:
+  db:
+    github: crystal-lang/crystal-db
+    version: ~> 0.4.1
+
+authors:
+  - Juan Wajnerman <jwajnerman@manas.tech>
+  - Brian J. Cardiff <bcardiff@manas.tech>
+
+license: MIT

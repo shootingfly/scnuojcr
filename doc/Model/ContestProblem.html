@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Model::ContestProblem - </title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class=" " data-id="/toplevel" data-name="top level namespace">
+      <a href="../toplevel.html">Top Level Namespace</a>
+      
+    </li>
+  
+  <li class="parent " data-id="/Admin" data-name="admin">
+      <a href="../Admin.html">Admin</a>
+      
+        <ul>
+  
+  <li class=" " data-id="/Admin/Common" data-name="admin::common">
+      <a href="../Admin/Common.html">Common</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Admin/ContestController" data-name="admin::contestcontroller">
+      <a href="../Admin/ContestController.html">ContestController</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Admin/MainController" data-name="admin::maincontroller">
+      <a href="../Admin/MainController.html">MainController</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Admin/ManagerController" data-name="admin::managercontroller">
+      <a href="../Admin/ManagerController.html">ManagerController</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Admin/ProblemController" data-name="admin::problemcontroller">
+      <a href="../Admin/ProblemController.html">ProblemController</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Admin/UserController" data-name="admin::usercontroller">
+      <a href="../Admin/UserController.html">UserController</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="/Common" data-name="common">
+      <a href="../Common.html">Common</a>
+      
+    </li>
+  
+  <li class=" " data-id="/ContestController" data-name="contestcontroller">
+      <a href="../ContestController.html">ContestController</a>
+      
+    </li>
+  
+  <li class="parent " data-id="/Judge" data-name="judge">
+      <a href="../Judge.html">Judge</a>
+      
+        <ul>
+  
+  <li class=" " data-id="/Judge/PerformProxy" data-name="judge::performproxy">
+      <a href="../Judge/PerformProxy.html">PerformProxy</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="/LayoutController" data-name="layoutcontroller">
+      <a href="../LayoutController.html">LayoutController</a>
+      
+    </li>
+  
+  <li class=" " data-id="/MainController" data-name="maincontroller">
+      <a href="../MainController.html">MainController</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="/Model" data-name="model">
+      <a href="../Model.html">Model</a>
+      
+        <ul>
+  
+  <li class=" " data-id="/Model/Contest" data-name="model::contest">
+      <a href="../Model/Contest.html">Contest</a>
+      
+    </li>
+  
+  <li class=" current" data-id="/Model/ContestProblem" data-name="model::contestproblem">
+      <a href="../Model/ContestProblem.html">ContestProblem</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Model/ContestRank" data-name="model::contestrank">
+      <a href="../Model/ContestRank.html">ContestRank</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Model/ContestStatus" data-name="model::conteststatus">
+      <a href="../Model/ContestStatus.html">ContestStatus</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Model/Manager" data-name="model::manager">
+      <a href="../Model/Manager.html">Manager</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Model/Problem" data-name="model::problem">
+      <a href="../Model/Problem.html">Problem</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Model/ProblemComment" data-name="model::problemcomment">
+      <a href="../Model/ProblemComment.html">ProblemComment</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Model/ProblemDetail" data-name="model::problemdetail">
+      <a href="../Model/ProblemDetail.html">ProblemDetail</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Model/Rank" data-name="model::rank">
+      <a href="../Model/Rank.html">Rank</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Model/Status" data-name="model::status">
+      <a href="../Model/Status.html">Status</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Model/User" data-name="model::user">
+      <a href="../Model/User.html">User</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Model/UserDetail" data-name="model::userdetail">
+      <a href="../Model/UserDetail.html">UserDetail</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Model/UserLogin" data-name="model::userlogin">
+      <a href="../Model/UserLogin.html">UserLogin</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Model/UserProfile" data-name="model::userprofile">
+      <a href="../Model/UserProfile.html">UserProfile</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="/Object" data-name="object">
+      <a href="../Object.html">Object</a>
+      
+    </li>
+  
+  <li class=" " data-id="/ProblemController" data-name="problemcontroller">
+      <a href="../ProblemController.html">ProblemController</a>
+      
+    </li>
+  
+  <li class=" " data-id="/RankController" data-name="rankcontroller">
+      <a href="../RankController.html">RankController</a>
+      
+    </li>
+  
+  <li class=" " data-id="/S" data-name="s">
+      <a href="../S.html">S</a>
+      
+    </li>
+  
+  <li class=" " data-id="/Scnu" data-name="scnu">
+      <a href="../Scnu.html">Scnu</a>
+      
+    </li>
+  
+  <li class=" " data-id="/StatusController" data-name="statuscontroller">
+      <a href="../StatusController.html">StatusController</a>
+      
+    </li>
+  
+  <li class=" " data-id="/UserController" data-name="usercontroller">
+      <a href="../UserController.html">UserController</a>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Model::ContestProblem
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Model/ContestProblem.html">Model::ContestProblem</a></li><li class="superclass">Reference</li><li class="superclass"><a href="../Object.html">Object</a></li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+
+
+
+  
+    <h2>Constant Summary</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="TYPES">
+        <strong>TYPES</strong> = <code>{<span class="t">String</span>: <span class="s">&quot;varchar&#40;255&#41;&quot;</span>, <span class="t">Int32</span>: <span class="s">&quot;integer unsigned&quot;</span>, <span class="t">Int64</span>: <span class="s">&quot;bigint unsigned&quot;</span>, <span class="t">Float32</span>: <span class="s">&quot;float&quot;</span>, <span class="t">Float64</span>: <span class="s">&quot;double&quot;</span>, <span class="t">Time</span>: <span class="s">&quot;datetime&quot;</span>, <span class="t">Nil</span>: <span class="s">&quot;null&quot;</span>, <span class="t">Bool</span>: <span class="s">&quot;bool&quot;</span>}</code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="VALUES">
+        <strong>VALUES</strong> = <code>{<span class="t">String</span>: <span class="s">&quot;Anything&quot;</span>, <span class="t">Int32</span>: <span class="n">1</span>, <span class="t">Int64</span>: <span class="n">1000</span>, <span class="t">Float32</span>: <span class="n">1.0</span>, <span class="t">Float64</span>: <span class="n">1.0</span>, <span class="t">Time</span>: <span class="s">&quot;2017-05-06 18:15:23&quot;</span>, <span class="t">Nil</span>: <span class="s">&quot;null&quot;</span>, <span class="t">Bool</span>: <span class="n">true</span>}</code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#all%3AArray%28self%29-class-method" class="signature"><strong>.all</strong> : Array(self)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#batch_insert%28num%3AInt32%2Chash%3AString%2C%26block%29-class-method" class="signature"><strong>.batch_insert</strong>(num : Int32, hash : String, &block)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#count%28where%3D%26quot%3B%26quot%3B%29-class-method" class="signature"><strong>.count</strong>(where = <span class="s">&quot;&quot;</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#create%28exec%3F%3Dtrue%2Cdrop%3F%3Dfalse%29-class-method" class="signature"><strong>.create</strong>(exec? = <span class="n">true</span>, drop? = <span class="n">false</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#delete-class-method" class="signature"><strong>.delete</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#delete%28where%3AString%29-class-method" class="signature"><strong>.delete</strong>(where : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#delete%28id%3AInt32%7CArray%28Int32%29%29-class-method" class="signature"><strong>.delete</strong>(id : Int32 | Array(Int32))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#drop-class-method" class="signature"><strong>.drop</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#exec%28sql%3AString%29-class-method" class="signature"><strong>.exec</strong>(sql : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#find%28id%3AInt32%29-class-method" class="signature"><strong>.find</strong>(id : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#find%28ids%3AArray%28Int32%29%29-class-method" class="signature"><strong>.find</strong>(ids : Array(Int32))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#find-class-method" class="signature"><strong>.find</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#find%3F%28id%3AInt32%29-class-method" class="signature"><strong>.find?</strong>(id : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#find%3F-class-method" class="signature"><strong>.find?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#first%28num%3D1%2Cwhere%3D%26quot%3B%26quot%3B%29-class-method" class="signature"><strong>.first</strong>(num = <span class="n">1</span>, where = <span class="s">&quot;&quot;</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get%28sql%3AString%2Chash%29-class-method" class="signature"><strong>.get</strong>(sql : String, hash)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_num%28sql%3AString%29-class-method" class="signature"><strong>.get_num</strong>(sql : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#insert-class-method" class="signature"><strong>.insert</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#last%28num%3D1%2Cwhere%3D%26quot%3B%26quot%3B%29-class-method" class="signature"><strong>.last</strong>(num = <span class="n">1</span>, where = <span class="s">&quot;&quot;</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new%28__temp_314%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(__temp_314 : JSON::PullParser)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new-class-method" class="signature"><strong>.new</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#order-class-method" class="signature"><strong>.order</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#query%28sql%3AString%29-class-method" class="signature"><strong>.query</strong>(sql : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#query_one%28sql%2Chash%29-class-method" class="signature"><strong>.query_one</strong>(sql, hash)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rand%28num%3D1%2Cwhere%3D%26quot%3B%26quot%3B%29-class-method" class="signature"><strong>.rand</strong>(num = <span class="n">1</span>, where = <span class="s">&quot;&quot;</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rand_insert-class-method" class="signature"><strong>.rand_insert</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#scalar%28sql%3AString%29-class-method" class="signature"><strong>.scalar</strong>(sql : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#table_name%3D%28value%29-class-method" class="signature"><strong>.table_name=</strong>(value)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#truncate-class-method" class="signature"><strong>.truncate</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#update%28id%3AInt32%2C%2A%2Ahash%29-class-method" class="signature"><strong>.update</strong>(id : Int32, **hash)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#where-class-method" class="signature"><strong>.where</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#where%28where%3AString%29-class-method" class="signature"><strong>.where</strong>(where : String)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#ac-instance-method" class="signature"><strong>#ac</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ac%3D%28ac%3AInt32%29-instance-method" class="signature"><strong>#ac=</strong>(ac : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ac%3F%3AInt32%3F-instance-method" class="signature"><strong>#ac?</strong> : Int32?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#contest_id-instance-method" class="signature"><strong>#contest_id</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#contest_id%3D%28contest_id%3AInt32%29-instance-method" class="signature"><strong>#contest_id=</strong>(contest_id : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#contest_id%3F%3AInt32%3F-instance-method" class="signature"><strong>#contest_id?</strong> : Int32?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#created_at-instance-method" class="signature"><strong>#created_at</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#created_at%3D%28created_at%3ATime%29-instance-method" class="signature"><strong>#created_at=</strong>(created_at : Time)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#created_at%3F%3ATime%3F-instance-method" class="signature"><strong>#created_at?</strong> : Time?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#description-instance-method" class="signature"><strong>#description</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#description%3D%28description%3AInt32%29-instance-method" class="signature"><strong>#description=</strong>(description : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#description%3F%3AInt32%3F-instance-method" class="signature"><strong>#description?</strong> : Int32?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id-instance-method" class="signature"><strong>#id</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id%3D%28id%3AInt32%29-instance-method" class="signature"><strong>#id=</strong>(id : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id%3F%3AInt32%3F-instance-method" class="signature"><strong>#id?</strong> : Int32?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#problem_id-instance-method" class="signature"><strong>#problem_id</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#problem_id%3D%28problem_id%3AString%29-instance-method" class="signature"><strong>#problem_id=</strong>(problem_id : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#problem_id%3F%3AString%3F-instance-method" class="signature"><strong>#problem_id?</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#space-instance-method" class="signature"><strong>#space</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#space%3D%28space%3AInt32%29-instance-method" class="signature"><strong>#space=</strong>(space : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#space%3F%3AInt32%3F-instance-method" class="signature"><strong>#space?</strong> : Int32?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#submit-instance-method" class="signature"><strong>#submit</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#submit%3D%28submit%3AInt32%29-instance-method" class="signature"><strong>#submit=</strong>(submit : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#submit%3F%3AInt32%3F-instance-method" class="signature"><strong>#submit?</strong> : Int32?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#testdata-instance-method" class="signature"><strong>#testdata</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#testdata%3D%28testdata%3AInt32%29-instance-method" class="signature"><strong>#testdata=</strong>(testdata : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#testdata%3F%3AInt32%3F-instance-method" class="signature"><strong>#testdata?</strong> : Int32?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#time-instance-method" class="signature"><strong>#time</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#time%3D%28time%3AInt32%29-instance-method" class="signature"><strong>#time=</strong>(time : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#time%3F%3AInt32%3F-instance-method" class="signature"><strong>#time?</strong> : Int32?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#title-instance-method" class="signature"><strong>#title</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#title%3D%28title%3AString%29-instance-method" class="signature"><strong>#title=</strong>(title : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#title%3F%3AString%3F-instance-method" class="signature"><strong>#title?</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method" class="signature"><strong>#to_json</strong>(json : JSON::Builder)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#updated_at-instance-method" class="signature"><strong>#updated_at</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#updated_at%3D%28updated_at%3ATime%29-instance-method" class="signature"><strong>#updated_at=</strong>(updated_at : Time)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#updated_at%3F%3ATime%3F-instance-method" class="signature"><strong>#updated_at?</strong> : Time?</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+  
+    
+
+  <h3>Instance methods inherited from class <code><a href="../Object.html">Object</a></code></h3>
+  
+  
+    <a href="../Object.html#methods%3AArray%28Symbol%29-instance-method" class="tooltip">
+      <span>methods : Array(Symbol)</span>
+    methods</a>
+    
+  
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="all:Array&#40;self&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>all</strong> : Array(self)
+
+        <a class="method-permalink" href="#all%3AArray%28self%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="batch_insert&#40;num:Int32,hash:String,&amp;block&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>batch_insert</strong>(num : Int32, hash : String, &block)
+
+        <a class="method-permalink" href="#batch_insert%28num%3AInt32%2Chash%3AString%2C%26block%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="count&#40;where&#61;&amp;quot;&amp;quot;&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>count</strong>(where = <span class="s">&quot;&quot;</span>)
+
+        <a class="method-permalink" href="#count%28where%3D%26quot%3B%26quot%3B%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="create&#40;exec?&#61;true,drop?&#61;false&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>create</strong>(exec? = <span class="n">true</span>, drop? = <span class="n">false</span>)
+
+        <a class="method-permalink" href="#create%28exec%3F%3Dtrue%2Cdrop%3F%3Dfalse%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="delete-class-method">
+      <div class="signature">
+        
+        def self.<strong>delete</strong>
+
+        <a class="method-permalink" href="#delete-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="delete&#40;where:String&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>delete</strong>(where : String)
+
+        <a class="method-permalink" href="#delete%28where%3AString%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="delete&#40;id:Int32|Array&#40;Int32&#41;&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>delete</strong>(id : Int32 | Array(Int32))
+
+        <a class="method-permalink" href="#delete%28id%3AInt32%7CArray%28Int32%29%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="drop-class-method">
+      <div class="signature">
+        
+        def self.<strong>drop</strong>
+
+        <a class="method-permalink" href="#drop-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="exec&#40;sql:String&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>exec</strong>(sql : String)
+
+        <a class="method-permalink" href="#exec%28sql%3AString%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="find&#40;id:Int32&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>find</strong>(id : Int32)
+
+        <a class="method-permalink" href="#find%28id%3AInt32%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="find&#40;ids:Array&#40;Int32&#41;&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>find</strong>(ids : Array(Int32))
+
+        <a class="method-permalink" href="#find%28ids%3AArray%28Int32%29%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="find-class-method">
+      <div class="signature">
+        
+        def self.<strong>find</strong>
+
+        <a class="method-permalink" href="#find-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="find?&#40;id:Int32&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>find?</strong>(id : Int32)
+
+        <a class="method-permalink" href="#find%3F%28id%3AInt32%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="find?-class-method">
+      <div class="signature">
+        
+        def self.<strong>find?</strong>
+
+        <a class="method-permalink" href="#find%3F-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="first&#40;num&#61;1,where&#61;&amp;quot;&amp;quot;&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>first</strong>(num = <span class="n">1</span>, where = <span class="s">&quot;&quot;</span>)
+
+        <a class="method-permalink" href="#first%28num%3D1%2Cwhere%3D%26quot%3B%26quot%3B%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get&#40;sql:String,hash&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>get</strong>(sql : String, hash)
+
+        <a class="method-permalink" href="#get%28sql%3AString%2Chash%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_num&#40;sql:String&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>get_num</strong>(sql : String)
+
+        <a class="method-permalink" href="#get_num%28sql%3AString%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="insert-class-method">
+      <div class="signature">
+        
+        def self.<strong>insert</strong>
+
+        <a class="method-permalink" href="#insert-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="last&#40;num&#61;1,where&#61;&amp;quot;&amp;quot;&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>last</strong>(num = <span class="n">1</span>, where = <span class="s">&quot;&quot;</span>)
+
+        <a class="method-permalink" href="#last%28num%3D1%2Cwhere%3D%26quot%3B%26quot%3B%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new&#40;__temp_314:JSON::PullParser&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(__temp_314 : JSON::PullParser)
+
+        <a class="method-permalink" href="#new%28__temp_314%3AJSON%3A%3APullParser%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>
+
+        <a class="method-permalink" href="#new-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="order-class-method">
+      <div class="signature">
+        
+        def self.<strong>order</strong>
+
+        <a class="method-permalink" href="#order-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="query&#40;sql:String&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>query</strong>(sql : String)
+
+        <a class="method-permalink" href="#query%28sql%3AString%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="query_one&#40;sql,hash&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>query_one</strong>(sql, hash)
+
+        <a class="method-permalink" href="#query_one%28sql%2Chash%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rand&#40;num&#61;1,where&#61;&amp;quot;&amp;quot;&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>rand</strong>(num = <span class="n">1</span>, where = <span class="s">&quot;&quot;</span>)
+
+        <a class="method-permalink" href="#rand%28num%3D1%2Cwhere%3D%26quot%3B%26quot%3B%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rand_insert-class-method">
+      <div class="signature">
+        
+        def self.<strong>rand_insert</strong>
+
+        <a class="method-permalink" href="#rand_insert-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="scalar&#40;sql:String&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>scalar</strong>(sql : String)
+
+        <a class="method-permalink" href="#scalar%28sql%3AString%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="table_name&#61;&#40;value&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>table_name=</strong>(value)
+
+        <a class="method-permalink" href="#table_name%3D%28value%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="truncate-class-method">
+      <div class="signature">
+        
+        def self.<strong>truncate</strong>
+
+        <a class="method-permalink" href="#truncate-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="update&#40;id:Int32,**hash&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>update</strong>(id : Int32, **hash)
+
+        <a class="method-permalink" href="#update%28id%3AInt32%2C%2A%2Ahash%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="where-class-method">
+      <div class="signature">
+        
+        def self.<strong>where</strong>
+
+        <a class="method-permalink" href="#where-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="where&#40;where:String&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>where</strong>(where : String)
+
+        <a class="method-permalink" href="#where%28where%3AString%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="ac-instance-method">
+      <div class="signature">
+        
+        def <strong>ac</strong>
+
+        <a class="method-permalink" href="#ac-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ac&#61;&#40;ac:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>ac=</strong>(ac : Int32)
+
+        <a class="method-permalink" href="#ac%3D%28ac%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ac?:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>ac?</strong> : Int32?
+
+        <a class="method-permalink" href="#ac%3F%3AInt32%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="contest_id-instance-method">
+      <div class="signature">
+        
+        def <strong>contest_id</strong>
+
+        <a class="method-permalink" href="#contest_id-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="contest_id&#61;&#40;contest_id:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>contest_id=</strong>(contest_id : Int32)
+
+        <a class="method-permalink" href="#contest_id%3D%28contest_id%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="contest_id?:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>contest_id?</strong> : Int32?
+
+        <a class="method-permalink" href="#contest_id%3F%3AInt32%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="created_at-instance-method">
+      <div class="signature">
+        
+        def <strong>created_at</strong>
+
+        <a class="method-permalink" href="#created_at-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="created_at&#61;&#40;created_at:Time&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>created_at=</strong>(created_at : Time)
+
+        <a class="method-permalink" href="#created_at%3D%28created_at%3ATime%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="created_at?:Time?-instance-method">
+      <div class="signature">
+        
+        def <strong>created_at?</strong> : Time?
+
+        <a class="method-permalink" href="#created_at%3F%3ATime%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="description-instance-method">
+      <div class="signature">
+        
+        def <strong>description</strong>
+
+        <a class="method-permalink" href="#description-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="description&#61;&#40;description:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>description=</strong>(description : Int32)
+
+        <a class="method-permalink" href="#description%3D%28description%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="description?:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>description?</strong> : Int32?
+
+        <a class="method-permalink" href="#description%3F%3AInt32%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id-instance-method">
+      <div class="signature">
+        
+        def <strong>id</strong>
+
+        <a class="method-permalink" href="#id-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id&#61;&#40;id:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>id=</strong>(id : Int32)
+
+        <a class="method-permalink" href="#id%3D%28id%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id?:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>id?</strong> : Int32?
+
+        <a class="method-permalink" href="#id%3F%3AInt32%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="problem_id-instance-method">
+      <div class="signature">
+        
+        def <strong>problem_id</strong>
+
+        <a class="method-permalink" href="#problem_id-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="problem_id&#61;&#40;problem_id:String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>problem_id=</strong>(problem_id : String)
+
+        <a class="method-permalink" href="#problem_id%3D%28problem_id%3AString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="problem_id?:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>problem_id?</strong> : String?
+
+        <a class="method-permalink" href="#problem_id%3F%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="space-instance-method">
+      <div class="signature">
+        
+        def <strong>space</strong>
+
+        <a class="method-permalink" href="#space-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="space&#61;&#40;space:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>space=</strong>(space : Int32)
+
+        <a class="method-permalink" href="#space%3D%28space%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="space?:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>space?</strong> : Int32?
+
+        <a class="method-permalink" href="#space%3F%3AInt32%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="submit-instance-method">
+      <div class="signature">
+        
+        def <strong>submit</strong>
+
+        <a class="method-permalink" href="#submit-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="submit&#61;&#40;submit:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>submit=</strong>(submit : Int32)
+
+        <a class="method-permalink" href="#submit%3D%28submit%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="submit?:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>submit?</strong> : Int32?
+
+        <a class="method-permalink" href="#submit%3F%3AInt32%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="testdata-instance-method">
+      <div class="signature">
+        
+        def <strong>testdata</strong>
+
+        <a class="method-permalink" href="#testdata-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="testdata&#61;&#40;testdata:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>testdata=</strong>(testdata : Int32)
+
+        <a class="method-permalink" href="#testdata%3D%28testdata%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="testdata?:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>testdata?</strong> : Int32?
+
+        <a class="method-permalink" href="#testdata%3F%3AInt32%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="time-instance-method">
+      <div class="signature">
+        
+        def <strong>time</strong>
+
+        <a class="method-permalink" href="#time-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="time&#61;&#40;time:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>time=</strong>(time : Int32)
+
+        <a class="method-permalink" href="#time%3D%28time%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="time?:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>time?</strong> : Int32?
+
+        <a class="method-permalink" href="#time%3F%3AInt32%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="title-instance-method">
+      <div class="signature">
+        
+        def <strong>title</strong>
+
+        <a class="method-permalink" href="#title-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="title&#61;&#40;title:String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>title=</strong>(title : String)
+
+        <a class="method-permalink" href="#title%3D%28title%3AString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="title?:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>title?</strong> : String?
+
+        <a class="method-permalink" href="#title%3F%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_json&#40;json:JSON::Builder&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>to_json</strong>(json : JSON::Builder)
+
+        <a class="method-permalink" href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="updated_at-instance-method">
+      <div class="signature">
+        
+        def <strong>updated_at</strong>
+
+        <a class="method-permalink" href="#updated_at-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="updated_at&#61;&#40;updated_at:Time&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>updated_at=</strong>(updated_at : Time)
+
+        <a class="method-permalink" href="#updated_at%3D%28updated_at%3ATime%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="updated_at?:Time?-instance-method">
+      <div class="signature">
+        
+        def <strong>updated_at?</strong> : Time?
+
+        <a class="method-permalink" href="#updated_at%3F%3ATime%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

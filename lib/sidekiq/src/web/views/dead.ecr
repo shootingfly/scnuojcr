@@ -1,0 +1,36 @@
+<% job = dead %>
+<% type = :dead %>
+<%= ecr "_job_info" %>
+
+<h3><%= x.t("Error") %></h3>
+<div class="table_container">
+  <table class="error table table-bordered table-striped">
+    <tbody>
+      <tr>
+        <th><%= x.t("ErrorClass") %></th>
+        <td>
+          <code><%= dead["error_class"] %></code>
+        </td>
+      </tr>
+      <tr>
+        <th><%= x.t("ErrorMessage") %></th>
+        <td><%= x.h(dead["error_message"].as(String)) %></td>
+      </tr>
+      <% if !dead["error_backtrace"].nil? %>
+        <tr>
+          <th><%= x.t("ErrorBacktrace") %></th>
+          <td>
+            <code><%= dead["error_backtrace"].as(Array).map{|x|x.as(String)}.join("<br/>") %></code>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<form class="form-horizontal" action="<%= x.root_path %>morgue/<%= x.job_params(dead, dead.score) %>" method="post">
+  <%= x.csrf_tag %>
+  <a class="btn btn-default" href="<%= x.root_path %>morgue"><%= x.t("GoBack") %></a>
+  <input class="btn btn-primary" type="submit" name="retry" value="<%= x.t("RetryNow") %>" />
+  <input class="btn btn-danger" type="submit" name="delete" value="<%= x.t("Delete") %>" />
+</form>

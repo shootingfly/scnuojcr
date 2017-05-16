@@ -1,0 +1,89 @@
+<header>
+  <h3><%= x.t("Job") %></h3>
+</header>
+
+<div class="table_container">
+  <table class="table table-bordered table-striped">
+    <tbody>
+      <tr>
+        <th><%= x.t("Queue") %></th>
+        <td>
+          <a href="<%= x.root_path %>queues/<%= job.queue %>"><%= job.queue %></a>
+        </td>
+      </tr>
+      <tr>
+        <th><%= x.t("Job") %></th>
+        <td>
+          <code><%= job.display_class %></code>
+        </td>
+      </tr>
+      <tr>
+        <th><%= x.t("Arguments") %></th>
+        <td>
+          <code class="code-wrap">
+            <!-- We don"t want to truncate any job arguments when viewing a single job"s status page -->
+            <div class="args-extended"><%= x.display_args(job.display_args, nil) %></div>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th>JID</th>
+        <td>
+          <code><%= job.jid %></code>
+        </td>
+      </tr>
+      <tr>
+        <th><%= x.t("CreatedAt") %></th>
+        <td><%= x.relative_time(job.created_at) %></td>
+      </tr>
+      <tr>
+        <th><%= x.t("Enqueued") %></th>
+        <td><%= (enqueued_at = job.enqueued_at) ? x.relative_time(enqueued_at) : x.t("NotYetEnqueued") %></td>
+      </tr>
+      <%  extras = x.retry_extra_items(job)
+          unless extras.empty? %>
+        <tr>
+          <th><%= x.t("Extras") %></th>
+          <td>
+            <code>
+              <%= extras.inspect %>
+            </code>
+          </td>
+        </tr>
+      <% end %>
+      <% if type == :retry %>
+        <% if job["retry_count"]? && job["retry_count"].as(Int) > 0 %>
+          <tr>
+            <th><%= x.t("RetryCount") %></th>
+            <td><%= job["retry_count"] %></td>
+          </tr>
+          <tr>
+            <th><%= x.t("LastRetry") %></th>
+            <td><%= x.relative_time(job.retried_at.not_nil!) %></td>
+          </tr>
+        <% else %>
+          <tr>
+            <th><%= x.t("OriginallyFailed") %></th>
+            <td><%= x.relative_time(job.failed_at.not_nil!) %></td>
+          </tr>
+        <% end %>
+        <tr>
+          <th><%= x.t("NextRetry") %></th>
+          <td><%= x.relative_time(job.at) %></td>
+        </tr>
+      <% end %>
+      <% if type == :scheduled %>
+        <tr>
+          <th><%= x.t("Scheduled") %></th>
+          <td><%= x.relative_time(job.at) %></td>
+        </tr>
+      <% end %>
+      <% if type == :dead %>
+        <tr>
+          <th><%= x.t("LastRetry") %></th>
+          <td><%= x.relative_time(job.at) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
